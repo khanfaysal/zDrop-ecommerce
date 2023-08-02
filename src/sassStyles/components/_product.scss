@@ -1,21 +1,64 @@
+@use "../variable";
+
 .allProducts {
-    height: 100vh;
-    width: 100%;
     display: flex;
     gap: 50px;
     z-index: 0;
-    margin-top: 30px;
-
-    aside {
-        position: relative;
-        width: 20%;
-        background-color: #ffcd9b;
-        border: solid 8px white;
-        height: 555px;
+  
+    &-aside {
+      width: 20%;
+      background-color: #ffcd9b;
+      border: solid 8px white;
+      height: 550px;
     }
-
-    main {
-        position: relative;
-        width: 80%;
+  
+    &-main {
+      width: 80%;
     }
-}
+  }
+  
+  .allProducts-main-wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+  
+    .allProducts-main-wrapper-card {
+      
+      padding: 20px;
+  
+      img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        max-width: 200px;
+        height: 200px; 
+        object-fit: cover; 
+        margin-bottom: 10px;
+      }
+  
+      .product-name {
+        margin: 0;
+        font-size: 12px;
+        font-weight: thin;
+      }
+  
+      p {
+        margin: 5px 0;
+        font-size: 14px;
+        font-weight: bold;
+      }
+  
+      &-flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: variable.$gray;
+        p {
+            font-size: 14px;
+            font-weight: thin;
+        }
+      }
+    }
+  }
+  

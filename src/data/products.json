@@ -1,0 +1,99 @@
+[
+  {
+    "id": 1,
+    "image": "asset-12.png",
+    "name": "Product A",
+    "price": "BDT. 755",
+    "discount": "34% off",
+    "strikeThroughPrice": "BDT. 1150"
+  },
+  {
+    "id": 2,
+    "image": "asset-9.png",
+    "name": "Product B",
+    "price": "BDT. 980",
+    "discount": "25% off",
+    "strikeThroughPrice": "BDT. 1300"
+  },
+  {
+    "id": 3,
+    "image": "asset-10.png",
+    "name": "Product C",
+    "price": "BDT. 550",
+    "discount": "15% off",
+    "strikeThroughPrice": "BDT. 650"
+  },
+  {
+    "id": 4,
+    "image": "asset-11.png",
+    "name": "Product D",
+    "price": "BDT. 320",
+    "discount": "40% off",
+    "strikeThroughPrice": "BDT. 540"
+  },
+  {
+    "id": 5,
+    "image": "asset-12.png",
+    "name": "Product A",
+    "price": "BDT. 755",
+    "discount": "34% off",
+    "strikeThroughPrice": "BDT. 1150"
+  },
+  {
+    "id": 6,
+    "image": "asset-9.png",
+    "name": "Product B",
+    "price": "BDT. 980",
+    "discount": "25% off",
+    "strikeThroughPrice": "BDT. 1300"
+  },
+  {
+    "id": 7,
+    "image": "asset-10.png",
+    "name": "Product C",
+    "price": "BDT. 550",
+    "discount": "15% off",
+    "strikeThroughPrice": "BDT. 650"
+  },
+  {
+    "id": 8,
+    "image": "asset-11.png",
+    "name": "Product D",
+    "price": "BDT. 320",
+    "discount": "40% off",
+    "strikeThroughPrice": "BDT. 540"
+  },
+  {
+    "id": 9,
+    "image": "asset-12.png",
+    "name": "Product A",
+    "price": "BDT. 755",
+    "discount": "34% off",
+    "strikeThroughPrice": "BDT. 1150"
+  },
+  {
+    "id": 10,
+    "image": "asset-9.png",
+    "name": "Product B",
+    "price": "BDT. 980",
+    "discount": "25% off",
+    "strikeThroughPrice": "BDT. 1300"
+  },
+  {
+    "id": 11,
+    "image": "asset-10.png",
+    "name": "Product C",
+    "price": "BDT. 550",
+    "discount": "15% off",
+    "strikeThroughPrice": "BDT. 650"
+  },
+  {
+    "id": 12,
+    "image": "asset-11.png",
+    "name": "Product D",
+    "price": "BDT. 320",
+    "discount": "40% off",
+    "strikeThroughPrice": "BDT. 540"
+  }
+
+]
