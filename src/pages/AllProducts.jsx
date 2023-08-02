@@ -2,8 +2,14 @@
 
 const AllProducts = () => {
     return (
-        <div>
-            <h1>all products</h1>
+        <div className="allProducts">
+        
+            <aside>
+                <p>aside</p>
+            </aside>
+            <main>
+                <p>main part</p>
+            </main>
         </div>
     );
 };

@@ -2,15 +2,15 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="header_wrapper">
-      <div className="nav_wrapper">
-        <nav>
+    <div className="header">
+      <div className="navbar">
+        <nav className="nav">
           <ul>
             <li>
-            <Link to="/">HomePage</Link>
+           <Link to="/">HomePage</Link>
             </li>
             <li>
-              <Link to="/products">Products</Link>
+              <Link className="nav-link" to="/products">Products</Link>
             </li>
             
           </ul>

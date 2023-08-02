@@ -1,0 +1,21 @@
+.allProducts {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    z-index: 0;
+    margin-top: 30px;
+
+    aside {
+        position: relative;
+        width: 20%;
+        background-color: #ffcd9b;
+        border: solid 8px white;
+        height: 555px;
+    }
+
+    main {
+        position: relative;
+        width: 80%;
+    }
+}

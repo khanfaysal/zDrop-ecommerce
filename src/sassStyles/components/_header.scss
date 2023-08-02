@@ -1,0 +1,36 @@
+
+.header {
+   height: 40px;
+   z-index: 100;
+ }
+ 
+ .navbar {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100%;
+   background-color: #fff;
+   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+ }
+ 
+ .nav {
+   overflow: hidden;
+ 
+   ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 15px;
+     display: flex;
+     gap: 10px;
+   }
+ 
+   a {
+     color: gray;
+     text-decoration: none !important;
+ 
+     &:hover {
+       color: #000;
+     }
+   }
+ }
+ 
