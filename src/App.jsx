@@ -1,10 +1,10 @@
 
-import Home from "./pages/Home";
+import MainLayout from './layouts/MainLayout';
 import "./sassStyles/style.scss"
 const App = () => {
   return (
     <div>
-     <Home />
+    <MainLayout />
     </div>
   );
 };
