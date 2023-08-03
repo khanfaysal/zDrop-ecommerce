@@ -1,9 +1,10 @@
 import { Link } from "react-router-dom";
+import dropdown from "../assets/images/social/arrow-drop-down-svgrepo-com.png";
+
 
 const Header = () => {
   return (
     <div className="header">
-
       <div className="navbar">
         <nav className="nav">
           <ul>
@@ -21,23 +22,38 @@ const Header = () => {
 
       <div className="filter-navbar">
 
-        <div className="filter-navbar-left">
+        <div className="filter-navbar-wrapper">
+        <div className="filter-navbar-wrapper-left">
           <p>Showing 1-40 of 80,068 products</p>
         </div>
 
-        <div className="filter-navbar-right">
+        <div className="filter-navbar-wrapper-right">
 
-            <label htmlFor="price">Refine By | </label>
-            <input list="prices" name="price" id="price" />
+          <div className="filter-navbar-wrapper-right">
+            <p>Refine By </p>
+            <div>|</div>
+            <div className="filter-navbar-wrapper-right-dropdown">
+              <p>price</p>
+              <img src={dropdown} alt="dropdown" />
+            </div>
+          </div>
 
-            <datalist id="prices">
-              <option value="10$" />
-              <option value="20$" />
-              <option value="30$" />
-              <option value="40$" />
-              <option value="50$" />
-            </datalist>
+          <div className="filter-navbar-wrapper-right">
+            <p>Sort By </p>
+            <div>|</div>
+            <div className="filter-navbar-wrapper-right-dropdown">
+              <p className="best-sellers">Best sellers</p>
+              <img src={dropdown} alt="dropdown" />
+            </div>
+          </div>
 
+          
+
+        </div>
+        </div>
+
+        <div className="search-input">
+          <input className="search" type="search" placeholder="Search" />
         </div>
 
       </div>

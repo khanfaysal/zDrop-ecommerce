@@ -1,4 +1,80 @@
+@use "../variable";
+
+.header {
+  width: 100%;
+}
+
+.navbar {
+  width: 100%;
+  background-color: variable.$white;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  // overflow: hidden;
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+  }
+
+  a {
+    color: gray;
+    text-decoration: none !important;
+
+    &:hover {
+      color: #000;
+    }
+  }
+}
+
+.filter-navbar {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  background: variable.$white;
+  padding: 10px 15px 10px 15px;
+  border-top: 1px solid rgb(237, 238, 237);
+  border-bottom: 1px solid rgb(237, 238, 237);
+
+  &-wrapper {
+    display: flex;
+    gap: 40px;
+    
+    &-left {
+    
+    }
+   
+    &-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+  
+      &-dropdown {
+        display: flex;
+        align-items: center;
+        img {
+          width: 33px;
+        }
+        .best-sellers {
+          margin-right: 55px;
+        }
+      }
+    }
+  }
+}
+
+
+/* styles.scss */
+
+/* Import the variable.scss */
 // @use "../variable";
+
+// /* Global styles or any other styles you want to add */
 
 // .header {
 //   width: 100%;
@@ -11,8 +87,6 @@
 // }
 
 // .nav {
-//   // overflow: hidden;
-
 //   ul {
 //     list-style-type: none;
 //     margin: 0;
@@ -36,111 +110,59 @@
 //   gap: 40px;
 //   align-items: center;
 //   background: variable.$white;
-//   padding: 10px 15px 10px 15px;
+//   padding: 10px 15px;
 //   border-top: 1px solid rgb(237, 238, 237);
 //   border-bottom: 1px solid rgb(237, 238, 237);
+
 //   &-left {
-//     // position: absolute;
-    
-   
+//     // flex-grow: 1; /* Expand to fill available space */
+//     p {
+//       margin: 0;
+//     }
+//   }
+
+//   &-right {
+//     display: flex;
+//     align-items: center;
+//     position: relative;
+
+//     label {
+//       margin-right: 10px;
+//     }
+
+//     input[list="prices"] {
+//       /* Styles for the input with datalist */
+//       border: none;
+//       border-left: 1px solid #ccc; /* Add border on the left side */
+//       padding-left: 10px; /* Add padding on the left side */
+//       background-color: #fff;
+//       width: 120px; /* Set a fixed width or adjust as needed */
+
+//       /* Hide the default dropdown arrow */
+//       -webkit-appearance: none;
+//       -moz-appearance: none;
+//       appearance: none;
+
+//       /* Add a custom arrow icon */
+//       background-image: url("../../assets/images/social/arrow-drop-down-svgrepo-com.png");
+//       background-repeat: no-repeat;
+//       background-position: right center;
+//       background-size: 16px;
+//     }
+
+//     /* Position the custom arrow icon */
+//     &::after {
+//       content: "";
+//       position: absolute;
+//       top: 50%;
+//       right: 10px;
+//       transform: translateY(-50%);
+//       width: 16px;
+//       height: 16px;
+//       background-image: url("../../assets/images/social/arrow-drop-down-svgrepo-com.png");
+//       background-repeat: no-repeat;
+//       background-position: center;
+//       background-size: contain;
+//     }
 //   }
 // }
-
-
-/* styles.scss */
-
-/* Import the variable.scss */
-@use "../variable";
-
-/* Global styles or any other styles you want to add */
-
-.header {
-  width: 100%;
-}
-
-.navbar {
-  width: 100%;
-  background-color: variable.$white;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
-}
-
-.nav {
-  ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 15px;
-    display: flex;
-    gap: 10px;
-  }
-
-  a {
-    color: gray;
-    text-decoration: none !important;
-
-    &:hover {
-      color: #000;
-    }
-  }
-}
-
-.filter-navbar {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  background: variable.$white;
-  padding: 10px 15px;
-  border-top: 1px solid rgb(237, 238, 237);
-  border-bottom: 1px solid rgb(237, 238, 237);
-
-  &-left {
-    // flex-grow: 1; /* Expand to fill available space */
-    p {
-      margin: 0;
-    }
-  }
-
-  &-right {
-    display: flex;
-    align-items: center;
-    position: relative;
-
-    label {
-      margin-right: 10px;
-    }
-
-    input[list="prices"] {
-      /* Styles for the input with datalist */
-      border: none;
-      border-left: 1px solid #ccc; /* Add border on the left side */
-      padding-left: 10px; /* Add padding on the left side */
-      background-color: #fff;
-      width: 120px; /* Set a fixed width or adjust as needed */
-
-      /* Hide the default dropdown arrow */
-      -webkit-appearance: none;
-      -moz-appearance: none;
-      appearance: none;
-
-      /* Add a custom arrow icon */
-      background-image: url("../../assets/images/social/arrow-drop-down-svgrepo-com.png");
-      background-repeat: no-repeat;
-      background-position: right center;
-      background-size: 16px;
-    }
-
-    /* Position the custom arrow icon */
-    &::after {
-      content: "";
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      background-image: url("../../assets/images/social/arrow-drop-down-svgrepo-com.png");
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: contain;
-    }
-  }
-}
