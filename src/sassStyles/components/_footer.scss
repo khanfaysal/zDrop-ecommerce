@@ -19,6 +19,13 @@
         max-width: 150px;
         height: auto; 
       }
+
+      .contact-heading {
+        font-size: 15px;
+        text-transform: uppercase;
+        font-weight: bold;
+        line-height: 0;
+      }
     }
   
     .email-form {
@@ -32,7 +39,7 @@
       align-items: center;
 
       .email-heading {
-        font-size: 18px;
+        font-size: 15px;
         text-transform: uppercase;
         font-weight: bold;
         line-height: 0;

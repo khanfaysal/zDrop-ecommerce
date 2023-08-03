@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
 
         <div className="footer-contact">
-            <p>contact us</p>
+            <p className="contact-heading">contact us</p>
             <div className="footer-contact-inner">
                 <img src={customer} alt="" />
                 <div>
