@@ -1,6 +1,3 @@
-/* styles.scss */
-/* Import the variable.scss */
-/* Global styles or any other styles you want to add */
 .header {
   width: 100%;
 }
@@ -30,52 +27,30 @@
   display: flex;
   gap: 40px;
   align-items: center;
+  justify-content: space-between;
   background: white;
-  padding: 10px 15px;
+  padding: 10px 15px 10px 15px;
   border-top: 1px solid rgb(237, 238, 237);
   border-bottom: 1px solid rgb(237, 238, 237);
 }
-.filter-navbar-left p {
-  margin: 0;
+.filter-navbar-wrapper {
+  display: flex;
+  gap: 40px;
 }
-.filter-navbar-right {
+.filter-navbar-wrapper-right {
   display: flex;
   align-items: center;
-  position: relative;
-  /* Position the custom arrow icon */
+  gap: 20px;
 }
-.filter-navbar-right label {
-  margin-right: 10px;
+.filter-navbar-wrapper-right-dropdown {
+  display: flex;
+  align-items: center;
 }
-.filter-navbar-right input[list=prices] {
-  /* Styles for the input with datalist */
-  border: none;
-  border-left: 1px solid #ccc; /* Add border on the left side */
-  padding-left: 10px; /* Add padding on the left side */
-  background-color: #fff;
-  width: 120px; /* Set a fixed width or adjust as needed */
-  /* Hide the default dropdown arrow */
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  /* Add a custom arrow icon */
-  background-image: url("../../assets/images/social/arrow-drop-down-svgrepo-com.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-  background-size: 16px;
+.filter-navbar-wrapper-right-dropdown img {
+  width: 33px;
 }
-.filter-navbar-right::after {
-  content: "";
-  position: absolute;
-  top: 50%;
-  right: 10px;
-  transform: translateY(-50%);
-  width: 16px;
-  height: 16px;
-  background-image: url("../../assets/images/social/arrow-drop-down-svgrepo-com.png");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+.filter-navbar-wrapper-right-dropdown .best-sellers {
+  margin-right: 55px;
 }
 
 .home {
@@ -91,12 +66,13 @@
   display: flex;
   gap: 50px;
   z-index: 0;
+  padding-top: 20px;
 }
 .allProducts-aside {
   width: 20%;
-  background-color: #ffcd9b;
-  border: solid 8px white;
-  height: 550px;
+  border: 1px solid rgb(228, 224, 224);
+  border-radius: 5px;
+  height: auto;
 }
 .allProducts-main {
   width: 80%;
@@ -140,4 +116,115 @@
 .allProducts-main-wrapper .allProducts-main-wrapper-card-flex p {
   font-size: 14px;
   font-weight: thin;
+}
+
+.footer {
+  padding: 40px;
+}
+.footer .footer-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footer-others {
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.footer-others img {
+  max-width: 150px;
+  height: auto;
+}
+.footer .email-form {
+  position: relative;
+  display: inline-block;
+}
+.footer .email-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer .email-footer .email-heading {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  line-height: 0;
+}
+.footer .email-footer .email-headline {
+  font-size: 14px;
+}
+.footer input.email {
+  border: none;
+  border-bottom: 1px solid #cac9c9;
+  padding: 9px 40px 9px 4px;
+  background: url("/send1.png") no-repeat top 5px right 1px;
+  transition: border-color 0.35s ease;
+}
+.footer input.email:focus {
+  border-bottom-color: #cac9c9;
+  outline: none;
+}
+.footer .nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  gap: 10px;
+}
+.footer .nav a {
+  color: gray;
+  text-decoration: none !important;
+}
+.footer .nav a:hover {
+  color: #000;
+}
+.footer .payment-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.footer .footer-contact-inner {
+  display: flex;
+  gap: 10px; /* Add some gap between image and text */
+}
+.footer .footer-contact-inner img {
+  width: 20px;
+  height: 20px;
+  margin-top: 7px; /* Adjust image width to your preference */
+}
+.footer .footer-contact-inner .service-name {
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 0;
+}
+.footer .footer-contact-inner .address {
+  font-size: 14px;
+  line-height: 0;
+}
+.footer .footer-contact-inner div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px; /* Add some gap between the paragraphs */
+}
+
+.search-input {
+  position: relative;
+  display: inline-block;
+}
+
+input.search {
+  border: 1px solid #cac9c9;
+  border-radius: 5px;
+  padding: 9px 40px 9px 4px;
+  background: url("/loupe.png") no-repeat top 8px right 8px;
+  transition: border-color 0.35s ease;
+}
+
+input.search:focus {
+  border-color: #cac9c9;
+  outline: none;
 }

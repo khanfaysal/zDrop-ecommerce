@@ -4,12 +4,13 @@
     display: flex;
     gap: 50px;
     z-index: 0;
+    padding-top: 20px;
   
     &-aside {
       width: 20%;
-      background-color: #ffcd9b;
-      border: solid 8px white;
-      height: 550px;
+      border: 1px solid rgb(228, 224, 224);
+      border-radius: 5px;
+      height: auto;
     }
   
     &-main {
