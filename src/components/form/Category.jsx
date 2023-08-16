@@ -1,5 +1,8 @@
 import { useState } from "react";
 import downArrow from "../../assets/images/others/down-arrow.png";
+import ProductFilter from "../ui/ProductFilter";
+
+
 
 const Category = () => {
   const [expandedCategories, setExpandedCategories] = useState([]);
@@ -54,6 +57,9 @@ const Category = () => {
         </div>
 
         {/* Add more main categories and their nested dropdowns */}
+
+{/*         
+        <ProductFilter searchPlaceHolder='Search by Contry' products={contries} buttonTxt='Country' /> */}
       </div>
     </div>
   );

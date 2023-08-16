@@ -1,0 +1,96 @@
+.product-filter {
+    width: 100%;
+    max-height: 500px;
+    overflow-y: hidden;
+    box-sizing: border-box;
+    padding: 0px 12px;
+    margin: 12px 0px;
+
+    .arrow-button {
+        position: relative;
+        background-color: transparent;
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000;
+        font-size: 16px;
+        cursor: pointer;
+        width: 100%;
+        transition: background-color 0.3s;
+        margin-bottom: 12px;
+
+        &.active {
+            .arrow-icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        .button-text {
+            margin-right: 10px;
+        }
+
+        .arrow-icon {
+            width: 20px;
+            height: 20px;
+            fill: rgb(0, 0, 0);
+            transition: transform 0.3s;
+        }
+    }
+
+    .filter-items-container {
+        transition-property: max-height;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        transition-duration: 300ms;
+
+        .radio-group {
+            display: flex;
+            flex-direction: column;
+            max-height: 300px;
+            overflow-y: auto;
+            margin-top: 12px;
+            margin-bottom: 12px;
+
+            .radio-option {
+                margin-bottom: 5px;
+                font-size: 16px;
+                font-weight: 400;
+                color: #615e5e;
+
+                input[type="radio"] {
+                    margin-right: 5px;
+                }
+            }
+
+            &::-webkit-scrollbar {
+                width: 8px;
+            }
+
+            &::-webkit-scrollbar-track {
+                background-color: transparent;
+            }
+
+            &::-webkit-scrollbar-thumb {
+                background-color: #00b55b;
+                border-radius: 4px;
+            }
+
+            &::-webkit-scrollbar-thumb:hover {
+                background-color: #00b55b;
+
+            }
+        }
+
+        span {
+            font-size: 20px;
+            line-height: 28px;
+            color: #00b55b;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+    }
+
+
+
+}
