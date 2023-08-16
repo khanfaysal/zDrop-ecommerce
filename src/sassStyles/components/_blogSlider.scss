@@ -1,0 +1,95 @@
+@use "../variable";
+
+.blog-slider-wrapper {
+    width: 100%;
+    // Your existing styles for the slider wrapper
+    
+    .slider-item {
+      // Your existing styles for the slider item
+    }
+    
+    // Styles for the custom arrows
+    .slick-prev,
+    .slick-next {
+      display: flex !important;
+      align-items: center !important;
+      width: 30px; // Adjust width as needed
+      height: 30px; // Adjust height as needed
+      border: none;
+      font-size: 30px;
+      line-height: 1;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 1;
+      cursor: pointer;
+    }
+    
+    .slick-prev {
+      left: -19px;
+      z-index: 0;
+    }
+    
+    .slick-next {
+      right: -15px;
+      z-index: 0;
+    }
+
+.slick-prev:before {
+    content: '\02C2' !important;
+    background: none;
+    margin-left: 3px;
+}
+
+.slick-next:before {
+    content: '\02c3' !important;
+    background: none;
+    margin-left: 10px;
+}
+
+.slick-dots li button:before {
+    font-size: 10px !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: variable.$primary;
+}
+
+.blog-card-image {
+    position: relative;
+    // z-index: 100 !important;
+}
+
+.card-heading {
+    position: absolute;
+    top: -9px;
+    background: variable.$primary;
+    padding: 5px;
+    font-weight: thin;
+    color: variable.$white;
+    border-radius: 3px;
+    margin-left: 10px;
+}
+.card-slider-content {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    gap: 10px;
+    color: variable.$white;
+}
+.card-date, .card-comment {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: 10px;
+}
+.card-date img, .card-comment img{
+    width: 20px;
+    height: 20px;
+}
+.card-calendar {
+    -webkit-filter : hue-rotate(180deg);
+    filter : hue-rotate(180deg);
+}
+  }
+  

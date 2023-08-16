@@ -1,0 +1,54 @@
+@use "../variable";
+
+.blog-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto; // Center horizontally
+  
+    .blog-content {
+      text-align: center;
+      max-width: 450px;
+      margin: 0 auto; // Center horizontally
+  
+      .blog-heading {
+        font-size: 20px;
+      }
+  
+      .blog-paragraph {
+        overflow-wrap: break-word;
+        line-height: 20px;
+      }
+    }
+  
+    .blog-card-wrapper {
+        display: flex;
+        gap: 20px;
+        margin-top: 80px;
+      }
+      
+      .blog-card {
+        max-width: 400px;
+        text-align: center;
+      
+        .card-icon {
+          font-size: 24px;
+        }
+      
+        .card-heading {
+          font-size: 15px;
+          font-weight: thin;
+        }
+      
+        .card-paragraph {
+          overflow-wrap: break-word;
+          line-height: 1.3;
+          font-size: 14px;
+          color: variable.$gray;
+        }
+      }
+      
+  }
+  
+

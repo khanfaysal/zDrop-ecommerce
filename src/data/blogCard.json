@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "image": "like.png",
+    "cardHeading": "Quality and Saving",
+    "cardParagraph": "Comprehensive quality control and affordable prices"
+  },
+  {
+    "id": 2,
+    "image": "like.png",
+    "cardHeading": "Global Brands",
+    "cardParagraph": "Buy you favorite items from your favorite global brands"
+  },
+  {
+    "id": 3,
+    "image": "like.png",
+    "cardHeading": "Fast Delivery",
+    "cardParagraph": "Fast and convenient door to door delivery"
+  },
+  {
+    "id": 4,
+    "image": "like.png",
+    "cardHeading": "Secure Payment",
+    "cardParagraph": "Different secure payment methods"
+  },
+  {
+    "id": 5,
+    "image": "like.png",
+    "cardHeading": "Professional Service",
+    "cardParagraph": "Efficient customer support from passionate team"
+  }
+]

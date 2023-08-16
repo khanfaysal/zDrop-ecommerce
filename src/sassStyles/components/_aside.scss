@@ -1,0 +1,112 @@
+@use "../variable";
+
+.filter {
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 13px;
+
+    &-inner {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      border: 1px solid variable.$gray;
+      border-radius: 20px;
+      padding: 3px 8px;
+
+      .filter-option {
+        margin: 0;
+        font-size: 14px;
+        color: variable.$gray;
+      }
+
+      .remove-icon {
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  .remove-all {
+    display: inline-flex;
+    border: 1px solid variable.$gray;
+    border-radius: 20px;
+    padding: 3px 8px;
+    color: variable.$gray;
+    font-size: 14px;
+
+    &:hover {
+        border: 1px solid variable.$primary;
+        color: variable.$primary;
+    }
+  }
+}
+
+.category {
+    .category-item-wrapper {
+        
+
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            margin: 0; /* Remove default margin */
+        }
+
+        .dropdown-arrow {
+            width: 20px;
+            height: 20px;
+            transition: transform 0.3s ease-in-out;
+            margin-left: 10px; /* Adjust as needed */
+
+            &.expanded {
+                transform: rotate(180deg);
+            }
+        }
+    }
+
+    .category-item {
+        display: inline-block;
+        margin-right: 20px;
+  
+        p {
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .subcategory {
+            display: none;
+            margin-top: 5px;
+            padding-left: 15px;
+
+            p {
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+
+        &:hover .subcategory {
+            display: block;
+        }
+
+        .nested-subcategory {
+            display: none;
+            margin-top: 5px;
+            padding-left: 20px;
+
+            p {
+                font-size: 12px;
+                cursor: pointer;
+            }
+        }
+
+        &:hover .nested-subcategory {
+            display: block;
+        }
+    }
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+}
