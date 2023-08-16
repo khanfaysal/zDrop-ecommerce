@@ -15,4 +15,10 @@
     border-color: #cac9c9; 
     outline: none; 
   }
+
+  @media (max-width: 575.98px) {
+    .search-input {
+      max-width: 100%;
+    }
+  }
   

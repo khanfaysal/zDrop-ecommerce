@@ -1,6 +1,8 @@
 @use "../variable";
 
+// filter scss
 .filter {
+  padding: 12px 12px;
   &-wrapper {
     display: flex;
     align-items: center;
@@ -42,10 +44,11 @@
   }
 }
 
+// category scss
 .category {
+  padding: 12px 12px;
     .category-item-wrapper {
         
-
         p {
             font-size: 16px;
             cursor: pointer;
@@ -62,11 +65,12 @@
                 transform: rotate(180deg);
             }
         }
+        
     }
 
     .category-item {
         display: inline-block;
-        margin-right: 20px;
+       
   
         p {
             font-size: 16px;
@@ -77,6 +81,7 @@
             display: none;
             margin-top: 5px;
             padding-left: 15px;
+            max-width: 200px;
 
             p {
                 font-size: 14px;
@@ -108,3 +113,63 @@
         justify-content: space-between;
     }
 }
+
+// size scss
+
+.size {
+    
+    .size-item {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+    
+    .size-wrapper {
+        margin-top: 10px;
+        border: 1px solid variable.$gray;
+        padding: 5px;
+    }
+}
+
+
+// Price scss
+.price {
+  padding: 12px 12px;
+    width: 100%;
+    box-sizing: border-box;
+  
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 40px;
+  
+      .price-inputs {
+        display: flex;
+        align-items: center;
+  
+        .hyphen {
+          margin: 0 10px;
+        }
+        .price-input {
+          width: 100%;
+          border: 1px solid variable.$gray;
+          padding: 5px;
+          border-radius: 5px;
+        }
+        
+      }
+  
+      .price-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 28px;
+        height: 28px;
+        background: variable.$primary;
+        border-radius: 15px 50px 50px 60px;
+        padding: 0px 6px;
+      }
+    }
+  }
+  

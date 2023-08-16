@@ -1,6 +1,11 @@
 @use"./variable";
 
 .aside-category-heading {
+    margin: 0;
     font-size: 16px;
     color: variable.$black;
+}
+
+.aside-dashed {
+    border-top: 1px dashed variable.$gray;
 }

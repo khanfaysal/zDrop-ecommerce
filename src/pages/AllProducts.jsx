@@ -1,5 +1,8 @@
 import Category from "../components/form/Category";
+import Color from "../components/form/Color";
 import Filters from "../components/form/Filters";
+import Price from "../components/form/Price";
+import Size from "../components/form/Size";
 import Blog from "../components/ui/Blog";
 import products from "../data/products.json";
 
@@ -8,11 +11,22 @@ const AllProducts = () => {
     <div className="products-wrapper">
       <div className="allProducts">
         <div className="allProducts-aside">
-          <div className="products-filter">
-            <Filters />
-          </div> 
-          <div>
-            <Category />
+          <div className="allProducts-aside-inner">
+            <div className="products-filter">
+              <Filters />
+            </div>
+            <div className="aside-dashed">
+              <Category />
+            </div>
+            <div className="aside-dashed">
+              <Size />
+            </div>
+            <div className="aside-dashed">
+              <Color />
+            </div>
+            <div className="aside-dashed">
+              <Price />
+            </div>
           </div>
         </div>
 

@@ -11,8 +11,6 @@
 }
 
 .nav {
-  // overflow: hidden;
-
   ul {
     list-style-type: none;
     margin: 0;
@@ -43,17 +41,17 @@
 
   &-wrapper {
     display: flex;
-    gap: 40px;
-    
+    flex-direction: column; /* Change to column for mobile and tablet */
+
     &-left {
-    
+      /* Add specific styles for the left side if needed */
     }
-   
+
     &-right {
       display: flex;
       align-items: center;
       gap: 20px;
-  
+
       &-dropdown {
         display: flex;
         align-items: center;
@@ -66,5 +64,21 @@
       }
     }
   }
-}
 
+  // Media queries for tablet and mobile
+
+  @media (max-width: 575.98px) {
+    .filter-navbar {
+      padding: 10px 15px 10px 25px!important;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+
+    &-wrapper {
+      &-right {
+        justify-content: center; /* Center items vertically for mobile and tablet */
+      }
+    }
+  }
+}
