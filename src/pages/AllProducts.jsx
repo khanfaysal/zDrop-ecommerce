@@ -8,8 +8,29 @@ import Blog from "../components/ui/Blog";
 import ProductFilter from "../components/ui/ProductFilter";
 import ecommerceProducts from "../data/products.json";
 
-const products = ['Aeropostale', 'Antony Morato ', 'Arrow Blue Jeans ', 'Arrow Sport ', 'Aeropostale', 'Antony Morato ', 'Arrow Blue Jeans ', 'Arrow Sport ', 'Aeropostale', 'Antony Morato ', 'Arrow Blue Jeans ', 'Arrow Sport ', 'Aeropostale', 'Antony Morato ', 'Arrow Blue Jeans ', 'Arrow Sport ', 'Aeropostale', 'Antony Morato ', 'Arrow Blue Jeans ', 'Arrow Sport '];
-const contries = ['Bangladesh', 'Palestine', 'Zapan']
+const products = [
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+];
+const contries = ["Bangladesh", "Palestine", "Zapan"];
 
 const AllProducts = () => {
   return (
@@ -24,6 +45,15 @@ const AllProducts = () => {
               <Category />
             </div>
             <div className="aside-dashed">
+              <ProductFilter
+                searchPlaceHolder="Search by Brands"
+                searchBar
+                products={products}
+                buttonTxt="Brands"
+                moreProductLeft={100}
+              />
+            </div>
+            <div className="aside-dashed">
               <Size />
             </div>
             <div className="aside-dashed">
@@ -34,9 +64,6 @@ const AllProducts = () => {
             </div>
             <div className="aside-dashed">
               <Star />
-            </div>
-            <div className="aside-dashed">
-            <ProductFilter searchPlaceHolder='Search by Brands' searchBar products={products} buttonTxt='Brands' moreProductLeft={100} />
             </div>
           </div>
         </div>

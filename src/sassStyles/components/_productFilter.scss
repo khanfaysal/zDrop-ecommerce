@@ -3,7 +3,7 @@
     max-height: 500px;
     overflow-y: hidden;
     box-sizing: border-box;
-    padding: 0px 12px;
+    padding: 0px 6px;
     margin: 12px 0px;
 
     .arrow-button {
@@ -18,7 +18,7 @@
         cursor: pointer;
         width: 100%;
         transition: background-color 0.3s;
-        margin-bottom: 12px;
+        // margin-bottom: 12px;
 
         &.active {
             .arrow-icon {

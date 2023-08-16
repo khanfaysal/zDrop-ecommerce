@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import SearchInput from './SearchInput'
+import downArrow from "../../assets/images/others/down-arrow.png";
 
 function ProductFilter({ searchBar = false, buttonTxt = '', products = [], searchPlaceHolder = '', moreProductLeft }) {
     const [expanded, setExpanded] = useState(null);
@@ -35,9 +36,10 @@ function ProductFilter({ searchBar = false, buttonTxt = '', products = [], searc
         <div className='product-filter'>
             <button onClick={handleMenuClick} className={`arrow-button ${expanded ? 'active' : ''}`} >
                 <span className="button-text">{buttonTxt}</span>
-                <svg className="arrow-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                    <path d="M7 10l5 5 5-5z" />
-                </svg>
+                <img
+              src={downArrow}
+              alt=""
+            />
             </button>
             <div
                 ref={contentRef}
