@@ -1,0 +1,6 @@
+@use"./variable";
+
+.aside-category-heading {
+    font-size: 16px;
+    color: variable.$black;
+}

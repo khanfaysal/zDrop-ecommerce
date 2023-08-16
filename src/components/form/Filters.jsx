@@ -6,7 +6,7 @@ const Filters = () => {
     ]
     return (
         <div className="filter">
-            <p>Filters</p>
+            <p className="aside-category-heading">Filters</p>
             {
                 filterData.map((singleFilterData) => {
                     return (

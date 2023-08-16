@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.aside-category-heading {
+  font-size: 16px;
+  color: #242424;
+}
+
 .header {
   width: 100%;
 }
@@ -394,7 +399,6 @@ input.search:focus {
 
 .category .category-item-wrapper p {
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
   margin: 0; /* Remove default margin */
 }
@@ -413,7 +417,6 @@ input.search:focus {
 }
 .category .category-item p {
   font-size: 16px;
-  font-weight: bold;
   cursor: pointer;
 }
 .category .category-item .subcategory {
