@@ -3,6 +3,7 @@ import Color from "../components/form/Color";
 import Filters from "../components/form/Filters";
 import Price from "../components/form/Price";
 import Size from "../components/form/Size";
+import Star from "../components/form/Star";
 import Blog from "../components/ui/Blog";
 import products from "../data/products.json";
 
@@ -26,6 +27,9 @@ const AllProducts = () => {
             </div>
             <div className="aside-dashed">
               <Price />
+            </div>
+            <div className="aside-dashed">
+              <Star />
             </div>
           </div>
         </div>
