@@ -1,8 +1,4 @@
 import { useState } from "react";
-import downArrow from "../../assets/images/others/down-arrow.png";
-import ProductFilter from "../ui/ProductFilter";
-
-
 
 const Category = () => {
   const [expandedCategories, setExpandedCategories] = useState([]);
@@ -26,13 +22,7 @@ const Category = () => {
             onClick={() => toggleCategory(1)}
           >
             <p className="aside-category-heading">Category</p>
-            <img
-              src={downArrow}
-              alt=""
-              className={`dropdown-arrow ${
-                expandedCategories.includes(1) ? "expanded" : ""
-              }`}
-            />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000000" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M6 9l6 6 6-6"/></svg>
           </div>
           {expandedCategories.includes(1) && (
             <div className="subcategory">
@@ -44,19 +34,14 @@ const Category = () => {
                     {expandedCategories.includes(111) && (
                       <div className="nested-subcategory">
                         <p onClick={() => toggleCategory(111)}>Shirts</p>
-                        {/* Add more nested subcategories as needed */}
                       </div>
                     )}
-                    {/* Add more nested subcategories as needed */}
                   </div>
                 )}
               </div>
-              {/* Add more subcategories under Subcategory 1 */}
             </div>
           )}
         </div>
-
-        {/* Add more main categories and their nested dropdowns */}
 
 {/*         
         <ProductFilter searchPlaceHolder='Search by Contry' products={contries} buttonTxt='Country' /> */}

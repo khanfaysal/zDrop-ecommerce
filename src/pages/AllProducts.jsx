@@ -30,7 +30,53 @@ const products = [
   "Arrow Blue Jeans ",
   "Arrow Sport ",
 ];
-const contries = ["Bangladesh", "Palestine", "Zapan"];
+const fabric = [
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+];
+const pattern = [
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+  "Aeropostale",
+  "Antony Morato ",
+  "Arrow Blue Jeans ",
+  "Arrow Sport ",
+];
+const countries = ["USA", "Germany","UK", "Italy", "Bangladesh"];
+const discount = ["10% - 30%", "30% -50%","50% - 70%"];
+const service = ["Cash on Delivery", "Free Shipping"];
 
 const AllProducts = () => {
   return (
@@ -54,16 +100,50 @@ const AllProducts = () => {
               />
             </div>
             <div className="aside-dashed">
+              <ProductFilter
+                searchPlaceHolder="Search by Brands"
+                products={countries}
+                buttonTxt="Country"
+                moreProductLeft={2}
+              />
+            </div>
+            <div className="aside-dashed">
               <Size />
             </div>
             <div className="aside-dashed">
               <Color />
             </div>
             <div className="aside-dashed">
+              <ProductFilter
+                products={discount}
+                buttonTxt="Discount"
+              />
+            </div>
+            <div className="aside-dashed">
               <Price />
             </div>
             <div className="aside-dashed">
               <Star />
+            </div>
+            <div className="aside-dashed">
+              <ProductFilter
+                products={fabric}
+                buttonTxt="Fabric"
+                moreProductLeft={5}
+              />
+            </div>
+            <div className="aside-dashed">
+              <ProductFilter
+                products={pattern}
+                buttonTxt="Pattern"
+                moreProductLeft={26}
+              />
+            </div>
+            <div className="aside-dashed">
+              <ProductFilter
+                products={service}
+                buttonTxt="Service"
+              />
             </div>
           </div>
         </div>

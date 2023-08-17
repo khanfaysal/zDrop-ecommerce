@@ -8,7 +8,7 @@ const Star = () => {
     ]
     return (
         <div className="rating">
-            <p className="aside-category-heading">Star</p>
+            <p className="aside-category-heading">Rating</p>
             {
                 RatingData.map((singleRatingData) => {
                     return (
